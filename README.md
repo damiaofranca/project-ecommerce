@@ -16,7 +16,7 @@ Para começar, clone o projeto. Após o clone, execute os seguintes comandos no 
     
 ## Inicializando o Projeto
 
-Use o seguinte comando para iniciar o projeto (em modo desemvolvimento):
+Use o seguinte comando para iniciar o projeto (em modo desenvolvimento):
 
 ```bash
   yarn dev
