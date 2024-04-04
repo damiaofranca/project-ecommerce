@@ -6,21 +6,19 @@ import { Header } from "@/components/Header";
 import { ButtonTag } from "@/components/ButtonTag";
 import { useGetProduct } from "@/hooks/useGetProduct";
 
-interface IDetailProduct {}
-
 export default function DetailProduct() {
 	const router = useRouter();
-	const { data, isLoading } = useGetProduct("1");
+	const { data, isLoading } = useGetProduct(router.query.id as string);
 
 	return (
 		<div className="flex flex-col h-screen">
 			<Header />
-			<div className="flex w-full h-full ">
+			<div className="flex w-full h-full">
 				{data && !isLoading ? (
 					<div className="w-full flex justify-center items-center max-[980px]:items-start">
 						<div className="flex max-[980px]:flex-col">
 							<div className="h-fit ml-6 max-[980px]:mt-6">
-								<div className="my-4 mb-2">
+								<div className="my-4 mb-2 min-[981px]:hidden">
 									<h1 className="text-4xl font-bold leading-7 text-gray-900 sm:truncate sm:text-3xl sm:tracking-tight">
 										{data.name}
 									</h1>

@@ -13,7 +13,7 @@ export const Card: FC<ICard> = ({ product }) => {
 	const router = useRouter();
 
 	return (
-		<div className="flex flex-col max-w-sm rounded overflow-hidden shadow p-2 max-h-[580px] max-[639px]:w-full">
+		<div className="flex flex-col max-w-sm rounded overflow-hidden shadow p-2 max-h-[580px] max-[639px]:w-full max-[639px]:my-2">
 			<div className="w-full flex justify-center">
 				<Image
 					width={200}
@@ -23,7 +23,7 @@ export const Card: FC<ICard> = ({ product }) => {
 					className="h-[280px] object-cover"
 				/>
 			</div>
-			<h5 className="font-bold text-xl  mb-auto mt-6 text-center">
+			<h5 className="font-bold text-xl mb-auto mt-6 text-center">
 				{product.name}
 			</h5>
 			<div className="flex w-full mt-6">

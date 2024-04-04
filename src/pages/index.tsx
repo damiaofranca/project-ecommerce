@@ -3,7 +3,7 @@ import { useState } from "react";
 import { Roboto } from "next/font/google";
 
 import { Header } from "@/components/Header";
-import { SideBar } from "@/components/SideBar";
+import { FilterBar } from "@/components/SideBar";
 import { ListItems } from "@/components/ListItems";
 import { useGetProducts } from "@/hooks/useGetProducts";
 import { FiltersProduct } from "@/interfacers/products";
@@ -25,16 +25,16 @@ export default function Home() {
 	};
 
 	return (
-		<div className={`flex flex-col min-h-screen ${inter.className}`}>
+		<div className={`flex flex-col  ${inter.className}`}>
 			<Header />
 
-			<div className="flex w-full max-[639px]:flex-col min-[639px]:relative min-[639px]:justify-end ">
-				<SideBar
+			<div className="flex overflow-auto flex-col ">
+				<FilterBar
 					onClearFilters={onClearFilters}
 					onChangeFilters={onChangeFilters}
 				/>
 				{!isLoading && data ? (
-					<div className="flex w-full min-[639px]:max-w-[calc(100%-256px)]">
+					<div className="flex w-full">
 						<ListItems data={data} />
 					</div>
 				) : (

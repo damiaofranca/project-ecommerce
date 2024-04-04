@@ -2,7 +2,6 @@ import type { NextApiRequest, NextApiResponse } from "next";
 
 import { products } from "@/mock/products";
 import { Product } from "@/interfacers/products";
-import { getAllColors, getAllSizes } from "@/utils/functions";
 
 function filterByName(products: Product[], name: string): Product[] {
 	return products.filter((product) =>
