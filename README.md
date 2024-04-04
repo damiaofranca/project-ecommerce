@@ -1,40 +1,64 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+# Projeto React - Teste Webjump Frontend
 
-First, run the development server:
+Este projeto foi desenvolvido como resposta ao desafio proposto para a posição de desenvolvedor frontend na Facilita Juridico. O objetivo era transformar um layout fornecido em uma página funcional, aplicando conhecimentos em HTML, CSS e JavaScript, além de utilizar a biblioteca NextJS.
+
+
+## Guia de Instalação
+
+
+Para começar, clone o projeto. Após o clone, execute os seguintes comandos no terminal:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+  yarn 
+```
+    
+    
+## Inicializando o Projeto
+
+Use o seguinte comando para iniciar o projeto (em modo desemvolvimento):
+
+```bash
+  yarn dev
+```
+    
+Apos a Inicialização, o website estará disponivel em:
+
+```
+http://localhost:3000
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+## Algumas Funcionalidades
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+- Responsividade.
+- Consumo de API.
+- Utilização de filtros encadeados.
+- Utilização de Dinamic Routes.
+- Listagem de dados.
+- Mudança de view no filtros.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Justificativas
 
-## Learn More
+- Filtros dinâmicos
 
-To learn more about Next.js, take a look at the following resources:
+É justo utilizar filtros dinâmicos visto que no mundo real diversas plataformas utilizam nesse padrão.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Incorporação de Rotas no Backend
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Utilizei o método de rotas disponíveis pelo NextJS pois fazia com que eu necessitasse de instalar outra depêndencias ao projeto.
 
-## Deploy on Vercel
+- Estilo de importação
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Em alguns arquivos utilizo de Alias para voltar a raiz da pasta SRC pois isso facilita na hora de importação deixando o codigo menos poluído.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- Edição de configuração padrão do TailwindCSS
+
+Em alguns casos foram necessários fazer a edição do arquivos padrão do tailwind para adicionar novos valores aos padrão de GRID CSS.
+
+
+
+## Stack utilizada
+
+ NextJS(com Typescript) e TailwindCSS.
