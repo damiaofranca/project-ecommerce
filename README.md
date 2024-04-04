@@ -1,5 +1,5 @@
 
-# Projeto React - Teste Webjump Frontend
+# Projeto React - Teste Facilita Juridico
 
 Este projeto foi desenvolvido como resposta ao desafio proposto para a posição de desenvolvedor frontend na Facilita Juridico. O objetivo era transformar um layout fornecido em uma página funcional, aplicando conhecimentos em HTML, CSS e JavaScript, além de utilizar a biblioteca NextJS.
 
